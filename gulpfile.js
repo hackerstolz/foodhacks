@@ -60,6 +60,7 @@ gulp.task( 'img', function() {
 gulp.task( 'html', function() {
   return gulp.src('./html/index.html')
         .pipe(gulp.dest('./app'))
+        .pipe(livereload())
 } );
 
 gulp.task( 'watch', function() {
