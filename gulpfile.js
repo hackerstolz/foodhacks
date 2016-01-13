@@ -55,26 +55,23 @@ gulp.task( 'img', function() {
   return gulp.src('img/*')
         .pipe(gulp.dest('./app/img'))
         .pipe(livereload())
-  /*
-    return gulp.src( './scss/style.scss' )
-    .pipe( plumber( { errorHandler: onError } ) )
-    .pipe( sass() )
-    .pipe( gulp.dest( './app' ) )
-    .pipe( minifycss() )
-    .pipe( rename( { suffix: '.min' } ) )
-    .pipe( gulp.dest( './app' ) )
-    .pipe( livereload() );*/
+} );
+
+gulp.task( 'html', function() {
+  return gulp.src('./html/index.html')
+        .pipe(gulp.dest('./app'))
 } );
 
 gulp.task( 'watch', function() {
   livereload.listen();
   gulp.watch( './stylus/*.styl', [ 'stylus' ] );
   gulp.watch( './img/**', [ 'img' ] );
+  gulp.watch( './html/**/*.html', [ 'html' ] );
   gulp.watch( './app/**/*.html' ).on( 'change', function( file ) {
     livereload.changed( file );
   } );
 } );
 
-gulp.task( 'default', [ 'stylus', 'img','watch' ], function() {
+gulp.task( 'default', [ 'stylus', 'img','watch','html' ], function() {
 
 } );
