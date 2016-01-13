@@ -36,6 +36,7 @@ gulp.task( 'stylus', function() {
         .pipe(stylus({compress: false, paths: ['stylus']}))
         .pipe(rename('style.css'))
         .pipe(gulp.dest('./app'))
+        .pipe(livereload())
         .pipe(minifycss())
         .pipe( rename( { suffix: '.min' } ) )
         .pipe(gulp.dest('./app'))
@@ -51,11 +52,19 @@ gulp.task( 'stylus', function() {
     .pipe( livereload() );*/
 } );
 
+gulp.task( 'js', function() {
+  return gulp.src('js/*')
+        .pipe(gulp.dest('./app/js'))
+        .pipe(livereload())
+} );
+
 gulp.task( 'img', function() {
   return gulp.src('img/*')
         .pipe(gulp.dest('./app/img'))
         .pipe(livereload())
 } );
+
+
 
 gulp.task( 'html', function() {
   return gulp.src('./html/index.html')
