@@ -51,14 +51,30 @@ gulp.task( 'stylus', function() {
     .pipe( livereload() );*/
 } );
 
+gulp.task( 'img', function() {
+  return gulp.src('img/*')
+        .pipe(gulp.dest('./app/img'))
+        .pipe(livereload())
+  /*
+    return gulp.src( './scss/style.scss' )
+    .pipe( plumber( { errorHandler: onError } ) )
+    .pipe( sass() )
+    .pipe( gulp.dest( './app' ) )
+    .pipe( minifycss() )
+    .pipe( rename( { suffix: '.min' } ) )
+    .pipe( gulp.dest( './app' ) )
+    .pipe( livereload() );*/
+} );
+
 gulp.task( 'watch', function() {
   livereload.listen();
   gulp.watch( './stylus/*.styl', [ 'stylus' ] );
+  gulp.watch( './img/**', [ 'img' ] );
   gulp.watch( './app/**/*.html' ).on( 'change', function( file ) {
     livereload.changed( file );
   } );
 } );
 
-gulp.task( 'default', [ 'stylus', 'watch' ], function() {
+gulp.task( 'default', [ 'stylus', 'img','watch' ], function() {
 
 } );
