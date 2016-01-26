@@ -3,52 +3,70 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Food{Hacks} 2016 Berlin</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <script type="text/javascript" src="bower_components/dist/jquery.js"></script>
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.4/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.4/mapbox-gl.css' rel='stylesheet' />
+        <script type="text/javascript" src="js/main.js"></script>
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="fonts/font.css">
         <link rel="stylesheet" href="style.css">
     </head>
 <body>
-<div class="landing">
-    <div class='container'>
-    <div class='leftbg'>
-        <img src='img/logo_dark.svg'/>
-        <div class='dates'>
-            <h1>01. - 03. </h1>
-            <h1>April 2016 </h1>
+<header>
+    <div id='menue_container'>
+        <div class='image_container'>
+            <img src='img/logo_dark.svg'>
         </div>
+        <ul>
+            <li><a href="#about"  class="scroll">About</a></li>
+            <li><a href="#location"  class="scroll">Location</a></li>
+            <li><a href="#prices"  class="scroll">Prices</a></li>
+            <li><a href="#food"  class="scroll">Why Food?</a></li>
+            <li><a href="#sponsoring"  class="scroll">Sponsors</a></li>
+        </ul>
+        <div class='apply_container'>
+         <ul>
+            <li>
+            <a href="#participation" class="scroll">Register</a></li>
+        </ul>
+        </div>
+
     </div>
-    <div class='rightbg'>
-    </div>
-    </div>
-    <div class="infochart">
-        <img src='img/infochart.svg'>
-    </div>
+</header>
+<div class="landing">
+    <img src="img/website_hero.svg ">
 </div>
+<div class="small_header">
+    <img src="img/logo_dark.svg ">
 </div>
 
+
+
+
 <div class='contentcontainer'>
-    <h2>from the hackers, </h2>
-    <h2>for the hackers </h2>
+    <h2>By hackers, </h2>
+    <h2>For hackers </h2>
+    <a id="about" ></a>
     <div class='container'>
         <div class='content_box item'>
             <h3>
             1st to 3rd April 2016
             </h3>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            After many sucessful events in Souther Germany HackerStolz e.V. (<a href='www.hackerstolz.de'>www.hackerstolz.de</a>) will bring his hackathon series to Berlin and will host Food{Hacks} in 2016.
             </p>
+            <p>The event will take place at the Rainmaking Loft which is located in the Charlottenstraße 2, 10969 Berlin</p>
         </div>
         <div class='content_box item'>
             <h3>
             What is a hackathon?
             </h3>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            A hackathon is a social event where interdisciplinary teams work together for one weekend to build innovative prototypes. Therefore, it is not a classic programming contest, itis more a collective social experience: a festival of IT-culture
             </p>
         </div>
         <div class='content_box item'>
@@ -56,37 +74,168 @@
             Goal of the Event
             </h3>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            Food{Hack}'s is to bring together programmers, designers and industry experts to build disruptive and innovative digitial prototypes will be developed that migh include: apps that help farmers, to market their products, analyses of supply chains of large retailers, solutations to alleviate world hunger, or an innovative delivery service app.
             </p>
         </div>
     </div>
 </div>
+<a id="location" ></a>
+<div class='afterfirst contentcontainer'>
+    <!--- anchor tag -->
+    <h2>Rainmaking Loft</h2>
+    <h2>A great Hacker Location</h2>
+    <div id='mapbox'></div>
+</div>
+<a id="prices" ></a>
+<hr/>
+<div class='afterfirst contentcontainer'>
+    <!--- anchor tag -->
+    <h2>Prices & Challenges</h2>
+    <div class='container'>
+        <div class='content_box prices_container'>
+                <div class='price'>
+                    <p>1st Prize </p>
+                    <p>TBA €</p>
+                </div>
+                <div class='price'>
+                    <p>2nd Prize</p>
+                    <p>TBA €</p>
+                </div>
+                <div class='price'>
+                    <p>2nd Prize</p>
+                    <p>TBA €</p>
+                </div>
+            </div>
+    </div>
+    <div class='container'>
+        <div class='content_box challenge_price'>
+            <h3>Challenge price 1</h3>
+        </div>
+        <div class='content_box challenge_price'>
+            <h3>Challenge price 2</h3>
+        </div>
+        <div class='content_box challenge_price'>
+            <h3>Challenge price 3</h3>
+        </div>
+    </div>
+</div>
+
+<!--- anchor tag -->
+<a id="sponsoring" ></a>
+<hr/>
+
 <div class='afterfirst contentcontainer'>
     <h2>Sponsors and Partners</h2>
     <div class='container'>
-        <div class='content_box'>
-            <h3>
-            Are you interested in sponsoring us?
-            </h3>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
+        <div class='content_box item'>
+        <h3>We have many interesting sponsoring packages for you!</h3>
+        <p>
+        Food{Hacks}’s goal is to bring together programmers, designers and industry experts to build disruptive and innovative digital prototypes for the food industry. To solve industry problems, different prototypes will be developed that might include: apps that help farmers to directly market their product, analyses of supply chains of large retailers, solutions to alleviate world hunger, or yet another innovative delivery service app.</p>
+        <p>
+            For potential partners the main benefit lies within the scouting of young and creative IT students or other digital natives who are able to tackle and solve problems with fresh ideas outside of typical thought patterns.
+        </p>
+        <p>
+        <a href="mailto:foodhacks@hackerstolz.de?Subject=Cooperation with Hackerstolz" target="_top">Contact us!</a>
+        </p>
         </div>
     </div>
 </div>
+<a id="food" ></a>
+<hr/>
 <div class='afterfirst contentcontainer'>
-<h2>Preregistration</h2>
+<h2>Food</h2>
+<div class='container'>
+        <div class='item_overview headline_box'>
+                <h3>How much space for innovation lies in food?</h3>
+                <h3>How can you start at this hackathon?</h3>
+                <p>
+                   Here you will find different ideas for inspiration about how broad the field of the food industry is. There is unlimted amount of pototential to be unlocked during the hackathon
+                </p>
+        </div>
+        <div class='item content_box'>
+            <img src='img/icon_delivery.svg'>
+            <h3>Delivery</h3>
+            <p>
+                Getting fresh food to consumer in the fastest possible way allows us to have the greatest experience in the richness and freshness of what our planet has to offer. Of course this means a huge challenge from the farmer to the delivery service to have the greatest results. Get ready for 7 billion peoples wanted to have a good diary.
+            </p>
+        </div>
+        <div class='item content_box'>
+            <img src='img/icon_marketing.svg'>
+            <h3>Marketing</h3>
+            <p>
+                TODO
+            </p>
+        </div>
+        <div class='item content_box'>
+            <img src='img/icon_camera.svg'>
+            <h3>Digitilization</h3>
+            <p>
+            TODO
+            </p>
+        </div>
+        <div class='item content_box'>
+            <img src='img/icon_socialfoodia.svg'>
+            <h3>Social Foodia</h3>
+            <p>
+            TODO
+            </p>
+        </div>
+        <div class='item content_box'>
+            <img src='img/icon_design.svg'>
+            <h3>Design</h3>
+            <p>
+            TODO
+            </p>
+        </div>
+        <div class='item content_box'>
+            <img src='img/icon_map.svg'>
+            <h3>Restaurant Finding</h3>
+            <p>
+            TODO
+            </p>
+        </div>
+        <div class='item content_box'>
+            <img src='img/icon_hyperlocalization.svg'>
+            <h3>Hyperlocalization</h3>
+            <p>
+            TODO
+            </p>
+        </div>
+        <div class='item content_box'>
+            <img src='img/icon_knives.svg'>
+            <h3>Preparation</h3>
+            <p>
+            TODO
+            </p>
+        </div>
+        <div class='item content_box'>
+            <img src='img/icon_phone.svg'>
+            <h3>Your unique idea</h3>
+            <p>
+            I bet you can come up with something so much more innovative than we do! Go ahead and sign up!
+            </p>
+        </div>
+</div>
+</div>
+<a id="participation" ></a>
+<hr/>
+<div class='afterfirst contentcontainer'>
+<h2>Participate!</h2>
 <div class='container'>
         <div class='content_box typeform_box'>
-<!-- Change the width and height values to suit you best -->
-<div class="typeform-widget" data-url="https://alex755.typeform.com/to/PP4yhV" data-text="Preregistration Food{Hacks}" style="width:100%;height:500px;"></div>
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-    <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by <a href="http://www.typeform.com/?utm_campaign=PP4yhV&amp;utm_source=typeform.com-1673205-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a></div>
+        <div style="width:100%; text-align:left;" >
+        <iframe  src="//eventbrite.co.uk/tickets-external?eid=20989874279&ref=etckt" frameborder="0" height="400" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ></div></div>
+
 </div>
 </div>
+</div>
+<div class="footers">
+    <div class="footer">
+        <span><a href="http://www.hackerstolz.de/de/impressum/">Impressum</a></span>
+    </div>
+    <div class="footer">
+        <span>An event made with love by <a href="http://www.hackerstolz.de/"> HackerStolz e.V. </a></span>
+    </div>
 </div>
 </body>
 </html>
