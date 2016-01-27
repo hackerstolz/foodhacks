@@ -24,5 +24,8 @@
     "gulp-watch": "^4.3.5",
     "jshint": "^2.8.0",
     "jshint-stylish": "^2.1.0"
+  },
+  "dependencies": {
+    "rupture": "^0.6.1"
   }
 }

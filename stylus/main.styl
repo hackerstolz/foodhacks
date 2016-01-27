@@ -1,27 +1,77 @@
 body
-  font 13px 'Quicksand', Arial, sans-serif
   background #0e1021
   color white
   margin 0
-  h1
-    font-size 100px
-    min-width 200px
-hr
-  color gray
-  background-color gray
-  width 80%
-  height 1px
-  margin 7%
-  border 0
 
+p, h3, h4, h5
+  font-family 'TWS Savory Light', Helvetica-Neue, sans-serif
+  font-weight regular
+  
+h1
+  font-size 100px
+  min-width 200px
+
+h2
+  font-size calc(50px + 3vw)
+  letter-spacing -1px
+  line-height 110%
+  margin 0
+  padding 0
+  
+h3
+  color rgba(255,255,255,.85)
+  font-size 19px
+  margin 5px 0
+  
+h1, h2
+  font-family 'Quicksand', Helvetica-Neue, sans-serif
+  font-weight 100
+  
+p
+  color rgba(255,255,255,.5)
+  font 14px 'TWS Savory Light', Arial, sans-serif
+  font-weight light
+  line-height 170%
+  a
+    font-size 15
+a
+  font-size 20px
+a:visited
+  color gray
+a:hover
+  color gray
+a:link
+  color white
+a:active
+  color white
+
+.headlinespacing
+  margin-bottom 50px
+  
+hr
+  color rgba(255,255,255,.05)
+  background-color rgba(255,255,255,.05)
+  width 100%
+  margin 10px 20px
+  height 1px
+  border 0
+  +below(800px)
+    display none
+
+.wrapper
+  max-width 1200px
+  margin 0 auto
+  
 .landing
+  background url("img/website_hero.svg")
+  background-repeat no-repeat
+  background-size cover
   margin auto
-  width 80%
-  margin-top 20px
-  @media screen and (max-width: 500px)
-      display none
+  width 100%
+  height 100vh
   img
     width 90%
+    
 .small_header
   width 100%
   margin auto
@@ -89,7 +139,6 @@ header
   width 100%
   padding-top 10px
   font-size 24px
-  line-height 48px
   background #05060d
   transition all 0.7s ease
   -webkit-transition all 0.7s ease
@@ -132,15 +181,6 @@ header.sticky
     width 50%
     margin auto
     display block
-    h2
-      text-align center
-      font-size 50px
-      letter-spacing 2px
-      line-height 80%
-      @media screen and (max-width: 1100px)
-        font-size 30px
-      @media screen and (max-width: 700px)
-        font-size 15px
     .teaserinfodetails
       display block
       margin auto
@@ -188,13 +228,13 @@ header.sticky
   flex-flow row wrap
   margin auto
   align-items flex-start
-  justify-content center
+  justify-content space-between
 
-.item_overview
-  flex 2 300px
+
 
 .headline_box
-  padding 30px
+  padding 30px 30px 30px 0
+  box-sizing border-box
   h3
       color white
       font-size 25px
@@ -204,68 +244,66 @@ header.sticky
     font 15px 'TWS Savory Light', Arial, sans-serif
     line-height 130%
 
+.item_overview
+  flex 3 1200px
+  
 .item
-  flex 1 300px
+  flex 1 360px
   flex-grow 1
-  p
-    color gray
-    font 15px 'TWS Savory Light', Arial, sans-serif
-    line-height 170%
+  max-width calc(33% - 5px)
+  +below(1000px)
+    max-width calc(50% - 5px)
+  +below(770px)
+    max-width 100%
 
+.item_overview, .item, .item-jury
+  margin-bottom 20px
+  box-sizing border-box
+
+.item-jury
+  flex 1 270px
+  display flex
+  flex-direction column
+  flex-wrap wrap
+  text-align center
+  justify-content center
+  align-items center
+  box-sizing border-box
+  padding 20px
+  img
+    margin-bottom 30px
+    background black
+    width 75px
+    height 75px
+    padding 15px
+    border-radius 50%
+  max-width calc(33% - 5px)
+  +below(1000px)
+    max-width calc(50% - 5px)
+  +below(770px)
+    max-width 100%
+  
+
+  
 .contentcontainer
-  margin-left auto
-  margin-right auto
   margin-top 50px
-  padding 0px 50px 0px 50px
   min-height 80%
-  h2
-    margin-top -70px
-    font-size 65px
-    letter-spacing 2px
-    line-height 120%
-    background rgba(14, 16, 33, 0.6);
-    @media screen and (max-width: 1100px)
-      font-size 40px
-      margin-top -30px
-      width 100%
-    @media screen and (max-width: 700px)
-      font-size 30px
-      margin-top -20px
+  padding 0 50px
+  +below(1000px)
+    padding 0 20px
 
-.afterfirst
-  margin-top 200px
+
 
 .content_box
-    background #05060d
-    padding 30px
-    margin-right 20px
-    margin-top 20px
+    background rgba(0,0,0,.35)
+    padding 35px
     font 15px 'TWS Savory Light', Arial, sans-serif
     img
       width 25%
       margin auto 
       display block
       margin-bottom 30px
-    h3
-      color white
-      font-size 22px
-      letter-spacing -0.75px
-    p
-      color gray
-      font 15px 'TWS Savory Light', Arial, sans-serif
-      line-height 170%
-      a
-        font-size 15
-    a
-      font-size 20px
-    a:visited
-      color gray
-    a:hover
-      color gray
-    a:link
-      color white
-    a:active
-      color white
+
 #mapbox
    z-index: -1;
    height 500px
@@ -274,6 +312,7 @@ header.sticky
    margin-left -50px
 
 .footers
+  font-family 'Quicksand'
   margin-top 50px
 
 .footer

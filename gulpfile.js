@@ -9,7 +9,8 @@ var gulp = require( 'gulp' ),
   rename = require( 'gulp-rename' ),
   notify = require( 'gulp-notify' ),
   include = require( 'gulp-include' ),
-  stylus = require('gulp-stylus')
+  stylus = require('gulp-stylus'),
+  rupture = require('rupture'),
   sass = require( 'gulp-sass' );
 
 
@@ -33,7 +34,11 @@ gulp.task('webserver', function() {
 
 gulp.task( 'stylus', function() {
   return gulp.src('stylus/main.styl')
-        .pipe(stylus({compress: false, paths: ['stylus']}))
+        .pipe(stylus({
+          compress: false,
+          paths: ['stylus'],
+          use: [rupture()]
+        }))
         .pipe(rename('style.css'))
         .pipe(gulp.dest('./app'))
         .pipe(livereload())
