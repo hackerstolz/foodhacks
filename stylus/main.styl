@@ -2,6 +2,8 @@ body
   background #0e1021
   color white
   margin 0
+  overflow-x hidden
+
 
 // Generelle Typographie
   
@@ -21,6 +23,8 @@ body::-webkit-scrollbar-thumb
   background-repeat no-repeat
   background-size 30px
 
+
+
 p, h3, h4, h5
   font-family 'TWS Savory', Helvetica-Neue, sans-serif
   font-weight 300
@@ -35,6 +39,8 @@ h2
   line-height 110%
   margin 0
   padding 0
+  +below(900px)
+    font-size calc(35px + 3vw)
 
 ul, li
   padding 0
@@ -257,7 +263,7 @@ header.sticky
   display flex
   flex-flow row wrap
   margin auto
-  align-items flex-start
+  align-items stretch
   justify-content space-between
 
 
@@ -274,28 +280,45 @@ header.sticky
   flex 3 1200px
 
 .item
-  flex 1 360px
   flex-grow 1
   max-width calc(33% - 5px)
-  padding 5px
+  padding 35px
+  background rgba(0,0,0,0.3)
+  display flex
+  flex-wrap wrap
+  align-items center
+  text-align center
+  flex-direction column
+  min-height 300px
   +below(1000px)
     max-width calc(50% - 5px)
   +below(770px)
     max-width 100%
+  img
+    padding 20px
 
-.item2
-  flex 1 360px
-  flex-grow 1
-  max-width calc(80% - 5px)
-  padding 5px
+// .item2
+//   flex 1 360px
+//   flex-grow 1
+//   box-sizing border-box
+//   padding 25px
+//   max-width calc(80% - 5px)
+//   background rgba(0,0,0,0.3)
+
+  justify-content center
+  align-items center
+  min-height 300px
   +below(1000px)
     max-width calc(50% - 5px)
   +below(770px)
     max-width 100%
+  
 
 .item_overview, .item, .item-jury
-  margin-bottom 20px
+  margin-bottom 15px
   box-sizing border-box
+  +below(1000px)
+    margin-bottom 10px
 
 .item-jury
   flex 1 270px
@@ -322,43 +345,70 @@ header.sticky
 
 .contentcontainer
   margin-top 50px
-  min-height 80%
   padding 0 50px
   +below(1000px)
     padding 0 20px
 
+#rainmaking
+  padding-left 30px
+  +below(500px)
+    padding-left 0
+  h2
+    display inline-block
+    padding 5px 25px
+    background rgba(0,0,0,.65)
+    
+#loft_pic
+  background-image url("img/loft_pic.jpg")
+  background-repeat no-repeat
+  z-index: -2;
+  background-size cover
+  background position bottom center
+  height 425px
+  margin-top -240px
+  width calc(100% + 40px)
+  margin-left -20px
 
-
-.content_box
-    background rgba(0,0,0,.35)
-    padding 35px
-    img
-      width 25%
-      margin auto 
-      display block
-      margin-bottom 30px
-    h3
-      color white
-      font-size 22px
-      letter-spacing -0.75px
+#loft_description
+  position absolute
+  transform translate(0,-80px)
+  right calc(50% - 520px)
+  +below(1200px)
+    right 50px
+  +below(485px)
+    position relative
+    right 0
+  div
+    display flex
+    align-items center
+    justify-content center
+    flex-direction column
+    width 350px
+    padding 25px
+    box-sizing border-box
+    background rgba(0,0,0,.65)
 
 #mapbox
-   z-index: -1;
-   height 500px
+   z-index -1
+   height 425px
    width 110%
-   margin-top -100px
-   margin-left -50px
    font-size 12px
+  
+#early-bird
+  transition 0.2s all
+  &:hover, &:focus
+    opacity 0.8
+    cursor pointer
 
 .footers
-  font-family 'Quicksand'
-  margin-top 50px
+  font-family 'TWS Savory'
+  margin 50px 0 20px
 
 .footer
   width 20%
   font-size 15px
-  margin auto
-  margin-top 10px
+  margin 5px auto
+  font-size 12px
   span
     width 100%
     display block
