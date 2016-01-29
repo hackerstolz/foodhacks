@@ -95,15 +95,117 @@ hr
 .wrapper
   max-width 1200px
   margin 0 auto
+  
 .landing
-  background url("img/website_hero.svg")
-  background-repeat no-repeat
-  background-size cover
+  // background url("img/website_hero.svg")
+  // background-repeat no-repeat
+  // background-size cover
   margin auto
-  width 100%
+  width 100vw
   height 100vh
   img
-    width 90%
+    height calc(100vh + 2px)
+    width calc(100vw + 2px)
+    margin-left -1px
+    margin-top -1px
+
+#layer1
+  background url("img/nlayer-01.svg")
+  background-repeat no-repeat
+  background-size cover
+  
+#layer2
+  background url("img/nlayer-02.svg")
+  background-repeat no-repeat
+  background-size cover
+
+#layer3
+  background url("img/nlayer-03.svg")
+  background-repeat no-repeat
+  background-size cover
+  
+#layer4
+  background url("img/nlayer-04.svg")
+  background-repeat no-repeat
+  background-size cover
+
+#layer5
+  background url("img/nlayer-05.svg")
+  background-repeat no-repeat
+  background-size cover
+
+#layer6
+  background url("img/nlayer-06.svg")
+  background-repeat no-repeat
+  background-size cover
+  
+#layer1, #layer2, #layer3, #layer4, #layer5, #layer6
+  position absolute
+  
+
+@keyframes layer3 {
+  0% {
+    opacity 1
+  }
+  50% {
+    opacity .3
+  }
+  100% {
+    opacity 1
+  }
+}
+
+#layer3 {
+   animation: layer3 3.8s infinite;
+}
+
+@keyframes layer6 {
+  0% {
+    opacity 1
+  }
+  50% {
+    opacity .3
+  }
+  100% {
+    opacity 1
+  }
+}
+
+#layer4 {
+   animation: layer4 4.2s infinite;
+}
+
+@keyframes layer4 {
+  0% {
+    opacity .3
+  }
+  50% {
+    opacity 1
+  }
+  100% {
+    opacity .3
+  }
+}
+
+#layer5 {
+   animation: layer5 3.5s infinite;
+}
+
+@keyframes layer5 {
+  0% {
+    opacity 1
+  }
+  66% {
+    opacity .3
+  }
+  100% {
+    opacity 1
+  }
+}
+#layer6 {
+   animation: layer6 11s infinite;
+}
+
 
 .small_header
   width 100%
