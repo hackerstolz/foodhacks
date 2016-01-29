@@ -176,6 +176,45 @@ header
   @media screen and (max-width: 900px)
     display None
 
+.mobile_header
+  position fixed
+  background rgba(0,0,0,0.35)
+  bottom 0
+  left 0
+  right 0
+  display flex
+  flex-direction row
+  justify-content center
+  align-items center
+  flex-wrap wrap
+  ul
+    display flex
+    flex-direction row
+    align-items flex-end
+    justify-content space-between
+    width 100%
+    margin-bottom -8px
+    a
+      list-style none
+      flex 1
+      padding 10px 5px
+      text-align center
+    p
+      text-transform uppercase
+      font-size 9px
+      color white
+  opacity 0
+  +below(768px)
+    opacity 1
+
+#mobile_register_button
+  flex 5 500px
+  display flex
+  align-items center
+  justify-content center
+  padding 20px 10px
+  background #FA5743
+  
 
 header.sticky
   top 0px
@@ -270,6 +309,7 @@ header.sticky
 .headline_box
   padding 0px 30px 30px 0
   box-sizing border-box
+  width 600px
 
 .item_overview
   flex 3 1200px
@@ -278,7 +318,7 @@ header.sticky
   flex 1 300px
   max-width calc(33% - 5px)
   padding 35px
-  // background rgba(0,0,0,0.3)
+  background rgba(0,0,0,0.3)
   display flex
   flex-direction column
   flex-wrap wrap
@@ -302,14 +342,6 @@ header.sticky
 //   padding 25px
 //   max-width calc(80% - 5px)
 //   background rgba(0,0,0,0.3)
-
-  justify-content center
-  align-items center
-  min-height 300px
-  +below(1000px)
-    max-width calc(50% - 5px)
-  +below(770px)
-    max-width 100%
   
 
 .item_overview, .item, .item-jury
@@ -327,6 +359,7 @@ header.sticky
 .item-jury
   flex 1 270px
   display flex
+  background rgba(0,0,0,0.3)
   flex-direction column
   flex-wrap wrap
   text-align center
@@ -351,10 +384,12 @@ header.sticky
    display flex
    flex-direction column
    flex-wrap wrap
+   background rgba(0,0,0,0.3)
    text-align center
    align-items center
    box-sizing border-box
    padding 20px
+   margin-bottom 7px
    img
      margin-bottom 30px
      width 75px
