@@ -23,8 +23,6 @@ body::-webkit-scrollbar-thumb
   background-repeat no-repeat
   background-size 30px
 
-
-
 p, h3, h4, h5
   font-family 'TWS Savory', Helvetica-Neue, sans-serif
   font-weight 300
@@ -142,6 +140,14 @@ hr
 #layer1, #layer2, #layer3, #layer4, #layer5, #layer6
   position absolute
   
+#fixer
+  z-index 1
+  height 2px
+  width 100vw
+  border-bottom 1px solid #0E1021
+  position absolute
+  bottom -1px
+  
 
 @keyframes layer3 {
   0% {
@@ -161,13 +167,13 @@ hr
 
 @keyframes layer6 {
   0% {
-    opacity 1
+    opacity 0.4
   }
   50% {
-    opacity .3
+    opacity .75
   }
   100% {
-    opacity 1
+    opacity 0.4
   }
 }
 
@@ -583,6 +589,7 @@ header.sticky
   font-size 15px
   margin 5px auto
   font-size 12px
+  color gray
   span
     width 100%
     display block
