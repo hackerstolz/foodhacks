@@ -1,0 +1,36 @@
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In  -->
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="58px" height="39px" viewBox="0 0 58 39" style="enable-background:new 0 0 58 39;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#20974E;}
+	.st1{fill:#3ABC69;}
+	.st2{fill:#88C057;}
+	.st3{fill:#CBB292;}
+	.st4{fill:#48C870;}
+	.st5{fill:#24AE5F;}
+</style>
+<defs>
+</defs>
+<g>
+	<path class="st0" d="M9,21.3V7.9L2,11v0.1C2.2,11,2.3,11,2.5,11C3.9,11,5,12.1,5,13.5v10.2C6,22.5,7.4,21.7,9,21.3L9,21.3z"/>
+</g>
+<g>
+	<path class="st0" d="M49,21.3V7.9l7,3.1v0.1c-0.2,0-0.3-0.1-0.5-0.1c-1.4,0-2.5,1.1-2.5,2.5v10.2C52,22.5,50.6,21.7,49,21.3
+		L49,21.3z"/>
+</g>
+<path class="st1" d="M11,21h14.8c1.8,0,3.2,1.5,3.2,3.2c0-1.8,1.5-3.2,3.2-3.2H47c0.7,0,1.4,0.1,2,0.3V1.9C49,0.9,48.1,0,47.1,0
+	H10.9C9.9,0,9,0.9,9,1.9v19.3C9.6,21.1,10.3,21,11,21z"/>
+<circle class="st2" cx="24" cy="9" r="1"/>
+<circle class="st2" cx="26" cy="12" r="1"/>
+<circle class="st2" cx="30" cy="12" r="1"/>
+<circle class="st2" cx="28" cy="9" r="1"/>
+<circle class="st2" cx="32" cy="9" r="1"/>
+<path class="st1" d="M53,13.5v10.8c0,2.6-2.1,4.7-4.7,4.7H9.7C7.1,29,5,26.9,5,24.3V13.5C5,12.1,3.9,11,2.5,11h0
+	C1.1,11,0,12.1,0,13.5l0,10.8C0,29.6,4.4,34,9.7,34h38.5c5.4,0,9.7-4.4,9.7-9.7V13.5c0-1.4-1.1-2.5-2.5-2.5h0
+	C54.1,11,53,12.1,53,13.5z"/>
+<polygon class="st3" points="10,34 9,39 11,39 16,34 "/>
+<polygon class="st3" points="48,34 49,39 47,39 42,34 "/>
+<path class="st4" d="M5,24.3C5,26.9,7.1,29,9.7,29H29v-4.8c0-1.8-1.5-3.2-3.2-3.2H11c-2.4,0-4.5,1.1-6,2.7V24.3z"/>
+<path class="st5" d="M53,24.3c0,2.6-2.1,4.7-4.7,4.7H29v-4.8c0-1.8,1.5-3.2,3.2-3.2H47c2.4,0,4.5,1.1,6,2.7V24.3z"/>
+</svg>
