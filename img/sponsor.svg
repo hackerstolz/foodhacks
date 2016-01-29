@@ -865,10 +865,10 @@
 		<rect x="47.8" y="178.3" class="st745" width="581.2" height="49"/>
 		<text transform="matrix(1 0 0 1 47.7833 192.1561)"><tspan x="0" y="0" class="st584 st839 st840">We select our sponsors for the best interaction possibilities between the </tspan><tspan x="0" y="26" class="st584 st839 st840">technological, food loving community and your company.</tspan></text>
 	</g>
-	<path class="st841" d="M857.8,225.4h-139c-11.9,0-21.6-9.7-21.6-21.6v0c0-11.9,9.7-21.6,21.6-21.6h139c11.9,0,21.6,9.7,21.6,21.6v0
-		C879.4,215.8,869.8,225.4,857.8,225.4z"/>
-	<rect x="748.4" y="195" class="st745" width="79.8" height="20"/>
-	<text transform="matrix(1 0 0 1 750.9401 208.8539)" class="st834 st842 st840">Say hello</text>
+	<path class="st841" d="M1087.2,225.4H958.4c-11.9,0-21.6-9.7-21.6-21.6v0c0-11.9,9.7-21.6,21.6-21.6h128.8
+		c11.9,0,21.6,9.7,21.6,21.6v0C1108.8,215.8,1099.1,225.4,1087.2,225.4z"/>
+	<rect x="982.9" y="195" class="st745" width="79.8" height="20"/>
+	<text transform="matrix(1 0 0 1 985.3868 208.8539)" class="st834 st842 st840">Say hello</text>
 </g>
 <g id="Ebene_2">
 </g>
