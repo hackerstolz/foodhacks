@@ -23,8 +23,6 @@ body::-webkit-scrollbar-thumb
   background-repeat no-repeat
   background-size 30px
 
-
-
 p, h3, h4, h5
   font-family 'TWS Savory', Helvetica-Neue, sans-serif
   font-weight 300
@@ -85,7 +83,8 @@ hr
   color rgba(255,255,255,.05)
   background-color rgba(255,255,255,.05)
   width 100%
-  margin 10px 20px
+  margin 35px 20px
+  padding 0
   height 1px
   border 0
   +below(800px)
@@ -94,15 +93,125 @@ hr
 .wrapper
   max-width 1200px
   margin 0 auto
+  
 .landing
-  background url("img/website_hero.svg")
-  background-repeat no-repeat
-  background-size cover
+  // background url("img/website_hero.svg")
+  // background-repeat no-repeat
+  // background-size cover
   margin auto
-  width 100%
+  width 100vw
   height 100vh
   img
-    width 90%
+    height calc(100vh + 2px)
+    width calc(100vw + 2px)
+    margin-left -1px
+    margin-top -1px
+
+#layer1
+  background url("img/nlayer-01.svg")
+  background-repeat no-repeat
+  background-size cover
+  
+#layer2
+  background url("img/nlayer-02.svg")
+  background-repeat no-repeat
+  background-size cover
+
+#layer3
+  background url("img/nlayer-03.svg")
+  background-repeat no-repeat
+  background-size cover
+  
+#layer4
+  background url("img/nlayer-04.svg")
+  background-repeat no-repeat
+  background-size cover
+
+#layer5
+  background url("img/nlayer-05.svg")
+  background-repeat no-repeat
+  background-size cover
+
+#layer6
+  background url("img/nlayer-06.svg")
+  background-repeat no-repeat
+  background-size cover
+  
+#layer1, #layer2, #layer3, #layer4, #layer5, #layer6
+  position absolute
+  
+#fixer
+  z-index 1
+  height 2px
+  width 100vw
+  border-bottom 1px solid #0E1021
+  position absolute
+  bottom -1px
+  
+
+@keyframes layer3 {
+  0% {
+    opacity 1
+  }
+  50% {
+    opacity .3
+  }
+  100% {
+    opacity 1
+  }
+}
+
+#layer3 {
+   animation: layer3 3.8s infinite;
+}
+
+@keyframes layer6 {
+  0% {
+    opacity 0.4
+  }
+  50% {
+    opacity .75
+  }
+  100% {
+    opacity 0.4
+  }
+}
+
+#layer4 {
+   animation: layer4 4.2s infinite;
+}
+
+@keyframes layer4 {
+  0% {
+    opacity .3
+  }
+  50% {
+    opacity 1
+  }
+  100% {
+    opacity .3
+  }
+}
+
+#layer5 {
+   animation: layer5 3.5s infinite;
+}
+
+@keyframes layer5 {
+  0% {
+    opacity 1
+  }
+  66% {
+    opacity .3
+  }
+  100% {
+    opacity 1
+  }
+}
+#layer6 {
+   animation: layer6 11s infinite;
+}
+
 
 .small_header
   width 100%
@@ -176,6 +285,45 @@ header
   @media screen and (max-width: 900px)
     display None
 
+.mobile_header
+  position fixed
+  background rgba(0,0,0,0.35)
+  bottom 0
+  left 0
+  right 0
+  display flex
+  flex-direction row
+  justify-content center
+  align-items center
+  flex-wrap wrap
+  ul
+    display flex
+    flex-direction row
+    align-items flex-end
+    justify-content space-between
+    width 100%
+    margin-bottom -8px
+    a
+      list-style none
+      flex 1
+      padding 10px 5px
+      text-align center
+    p
+      text-transform uppercase
+      font-size 9px
+      color white
+  opacity 0
+  +below(768px)
+    opacity 1
+
+#mobile_register_button
+  flex 5 500px
+  display flex
+  align-items center
+  justify-content center
+  padding 20px 10px
+  background #FA5743
+  
 
 header.sticky
   top 0px
@@ -270,6 +418,7 @@ header.sticky
 .headline_box
   padding 0px 30px 30px 0
   box-sizing border-box
+  width 600px
 
 .item_overview
   flex 3 1200px
@@ -278,7 +427,7 @@ header.sticky
   flex 1 300px
   max-width calc(33% - 5px)
   padding 35px
-  // background rgba(0,0,0,0.3)
+  background rgba(0,0,0,0.3)
   display flex
   flex-direction column
   flex-wrap wrap
@@ -295,6 +444,8 @@ header.sticky
     width 75px
     height 75px
 
+#announce
+  max-width 100vw
 // .item2
 //   flex 1 360px
 //   flex-grow 1
@@ -302,14 +453,6 @@ header.sticky
 //   padding 25px
 //   max-width calc(80% - 5px)
 //   background rgba(0,0,0,0.3)
-
-  justify-content center
-  align-items center
-  min-height 300px
-  +below(1000px)
-    max-width calc(50% - 5px)
-  +below(770px)
-    max-width 100%
   
 
 .item_overview, .item, .item-jury
@@ -327,6 +470,7 @@ header.sticky
 .item-jury
   flex 1 270px
   display flex
+  background rgba(0,0,0,0.3)
   flex-direction column
   flex-wrap wrap
   text-align center
@@ -351,10 +495,12 @@ header.sticky
    display flex
    flex-direction column
    flex-wrap wrap
+   background rgba(0,0,0,0.3)
    text-align center
    align-items center
    box-sizing border-box
    padding 20px
+   margin-bottom 7px
    img
      margin-bottom 30px
      width 75px
@@ -429,6 +575,8 @@ header.sticky
   &:hover, &:focus
     opacity 0.8
     cursor pointer
+  +below(600px)
+    display none
 
 .footers
   font-family 'TWS Savory'
@@ -441,6 +589,7 @@ header.sticky
   font-size 15px
   margin 5px auto
   font-size 12px
+  color gray
   span
     width 100%
     display block

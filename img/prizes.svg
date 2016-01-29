@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1157.9 259" style="enable-background:new 0 0 1157.9 259;" xml:space="preserve">
+	 viewBox="0 0 1157.9 152.6" style="enable-background:new 0 0 1157.9 152.6;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#0E1021;}
 	.st1{fill:#F2F2F2;}
@@ -836,39 +836,41 @@
 	.st830{fill:none;stroke:#7A3726;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
 	.st831{fill:#A5A5A5;}
 	.st832{clip-path:url(#SVGID_58_);}
-	.st833{clip-path:url(#SVGID_60_);}
-	.st834{fill:#FA5743;}
-	.st835{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st836{font-family:'Quicksand-Light';}
-	.st837{font-size:55.6372px;}
-	.st838{letter-spacing:-1;}
-	.st839{font-family:'TWSSavory-Light';}
-	.st840{font-size:17.3295px;}
-	.st841{fill:#FFFFFF;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st842{font-family:'TWSSavory-Medium';}
+	.st833{fill:#FA5743;}
+	.st834{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st835{fill:#FFFFFF;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st836{fill:#EFD89E;}
+	.st837{font-family:'Quicksand-Light';}
+	.st838{font-size:55.6372px;}
+	.st839{letter-spacing:-1;}
 </style>
 <g id="Ebene_4">
 </g>
 <g id="Ebene_1">
-	<rect y="-0.3" class="st834" width="1157.9" height="258.7"/>
+	<rect x="-0.1" y="0.5" class="st0" width="1157.9" height="151.9"/>
 	<g>
 		<defs>
-			<rect id="SVGID_61_" y="-0.3" width="1157.9" height="259.3"/>
+			<rect id="SVGID_63_" x="-0.1" y="0.5" width="1157.9" height="152.1"/>
 		</defs>
+		<use xlink:href="#SVGID_63_"  style="overflow:visible;fill:#0E1021;"/>
 		<clipPath id="SVGID_2_">
-			<use xlink:href="#SVGID_61_"  style="overflow:visible;"/>
+			<use xlink:href="#SVGID_63_"  style="overflow:visible;"/>
 		</clipPath>
 	</g>
-	<rect x="46.8" y="47.9" class="st745" width="761.2" height="135.1"/>
-	<text transform="matrix(1 0 0 1 46.7842 86.8485)"><tspan x="0" y="0" class="st584 st836 st837 st838">Improve food. </tspan><tspan x="0" y="56.9" class="st584 st836 st837 st838">Become a sponsor.</tspan></text>
+	<rect x="-0.1" y="0.5" class="st836" width="1157.9" height="151.9"/>
 	<g>
-		<rect x="47.8" y="178.3" class="st745" width="581.2" height="49"/>
-		<text transform="matrix(1 0 0 1 47.7833 192.1561)"><tspan x="0" y="0" class="st584 st839 st840">We select our sponsors for the best interaction possibilities between the </tspan><tspan x="0" y="26" class="st584 st839 st840">technological, food loving community and your company.</tspan></text>
+		<g>
+			<defs>
+				<rect id="SVGID_65_" x="-0.1" y="0.5" width="1157.9" height="152.1"/>
+			</defs>
+			<use xlink:href="#SVGID_65_"  style="overflow:visible;fill:#EFD89E;"/>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_65_"  style="overflow:visible;"/>
+			</clipPath>
+		</g>
 	</g>
-	<path class="st841" d="M1087.2,225.4H958.4c-11.9,0-21.6-9.7-21.6-21.6v0c0-11.9,9.7-21.6,21.6-21.6h128.8
-		c11.9,0,21.6,9.7,21.6,21.6v0C1108.8,215.8,1099.1,225.4,1087.2,225.4z"/>
-	<rect x="982.9" y="195" class="st745" width="79.8" height="20"/>
-	<text transform="matrix(1 0 0 1 985.3868 208.8539)" class="st834 st842 st840">Say hello</text>
+	<rect x="46.8" y="54.9" class="st745" width="1044.1" height="50.1"/>
+	<text transform="matrix(1 0 0 1 46.7852 93.8367)" class="st0 st837 st838 st839">The prizes will be announced soon.</text>
 </g>
 <g id="Ebene_2">
 </g>
