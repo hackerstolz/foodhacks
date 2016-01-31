@@ -2,6 +2,8 @@ body
   background #0e1021
   color white
   margin 0
+  
+html, body
   overflow-x hidden
 
 
@@ -106,6 +108,9 @@ hr
     width calc(100vw + 2px)
     margin-left -1px
     margin-top -1px
+  
+.mobile_wrapper
+  width 100%
 
 #layer1
   background url("img/nlayer-01.svg")
@@ -299,10 +304,9 @@ header
   ul
     display flex
     flex-direction row
-    align-items flex-end
     justify-content space-between
     width 100%
-    margin-bottom -8px
+    margin-bottom -5px
     a
       list-style none
       flex 1
@@ -581,6 +585,8 @@ header.sticky
 .footers
   font-family 'TWS Savory'
   margin 50px 0 20px
+  +below(500px)
+    margin 50px 0 150px
 
 .footer
   text-align center
@@ -590,6 +596,8 @@ header.sticky
   margin 5px auto
   font-size 12px
   color gray
+  +below(500px)
+    width 80%
   span
     width 100%
     display block
