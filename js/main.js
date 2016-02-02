@@ -56,3 +56,11 @@ if ($(this).scrollTop() > 100){
 });
 
 //mapbox
+
+//Arrow verschwindet
+
+$(document).ready(function(){
+    $("#arrow").click(function(){
+        $(this).hide();
+    });
+});

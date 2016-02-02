@@ -100,9 +100,10 @@ hr
   margin 0 auto
   
 .landing
-  // background url("img/website_hero.svg")
-  // background-repeat no-repeat
-  // background-size cover
+  +below(600px)
+    background url("img/website_hero.svg")
+    background-repeat no-repeat
+    background-size cover
   margin auto
   width 100vw
   height 100vh
@@ -114,6 +115,8 @@ hr
   
 .mobile_wrapper
   width 100%
+  +below(600px)
+    display none
 
 #layer1
   background url("img/nlayer-01.svg")
@@ -343,6 +346,8 @@ header.sticky
   display flex
   justify-content center
   animation: arrow 2.5s linear infinite;
+  +below(600px)
+    display none
   
   margin-top -20vh
   img
