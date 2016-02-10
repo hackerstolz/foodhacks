@@ -237,52 +237,6 @@ hr
     margin auto
     width 80%
 
-#menue_container
-  width 100%
-  margin auto
-  float right
-  ul
-    font-size 13.75px
-    margin-top 22px
-    text-transform uppercase
-    letter-spacing 2px
-    width 70%
-    float left
-    @media screen and (max-width: 1000px)
-      width 70%
-    li
-      margin-right 35px
-      float Left
-      vertical-align top
-
-  .image_container
-    float left
-    @media screen and (max-width: 1000px)
-      width 20%
-    width 12%
-    margin auto
-    img
-      height 50px
-      margin-left 15px
-  .apply_container
-    float right
-    width 15%
-    vertical-align text-top
-    @media screen and (max-width: 1000px)
-      display None
-    ul
-      li
-        background rgba(224,62,59,1)
-        padding 12px 16px 9px 16px
-        margin-top -9px
-        border-radius 18px
-        transition 0.2s all
-        &:hover, &:focus
-          cursor pointer
-          background rgba(224,62,59,.5)
-
-
-
 header
   position fixed
   top -150px
@@ -293,8 +247,42 @@ header
   background rgba(0,0,0,0.65)
   transition all 0.7s ease
   -webkit-transition all 0.7s ease
-  @media screen and (max-width: 900px)
+  +below(620px)
     display None
+    
+#menue_container
+  width 100%
+  display flex
+  flex-direction row
+  .image-container
+    img
+      height 47px
+  .menu-nav, .apply-container
+    list-style none
+    display flex
+    flex-direction row
+    align-items center
+    font-size 14px
+    a
+      padding 0 10px
+      transition 0.2s ease-in all
+      &:hover, &:focus
+        opacity .7
+        cursor pointer
+  .menu-nav
+    margin-left 20px
+  .apply-container
+    justify-content flex-end
+    margin auto 20px auto auto
+    padding 8px
+    background rgba(224,62,59,1)
+    transition 0.2s all
+    border-radius 18px
+    &:hover, &:focus
+      cursor pointer
+      background rgba(224,62,59,.5)
+
+
 
 .mobile_header
   position fixed
@@ -322,9 +310,9 @@ header
       text-transform uppercase
       font-size 9px
       color white
-  opacity 0
-  +below(768px)
-    opacity 1
+  transform translate(0,100px)
+  +below(620px)
+    transform translate(0,0)
 
 #mobile_register_button
   flex 5 500px
@@ -661,7 +649,7 @@ header.sticky
 
 .footers
   font-family 'TWS Savory'
-  margin 50px 0 20px
+  margin 50px 0 70px
   +below(500px)
     margin 50px 0 150px
 
