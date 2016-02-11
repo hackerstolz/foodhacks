@@ -448,7 +448,6 @@ header.sticky
 
 .item
   flex 1 300px
-  max-width calc(33% - 5px)
   padding 35px
   background rgba(0,0,0,0.3)
   display flex
@@ -458,9 +457,10 @@ header.sticky
   align-items center
   box-sizing border-box
   min-height 300px
-  +below(1000px)
+  max-width calc(33% - 5px)
+  +below(800px)
     max-width calc(50% - 5px)
-  +below(770px)
+  +below(500px)
     max-width 100%
   img
     padding 20px
@@ -490,7 +490,8 @@ header.sticky
   +below(500px)
     max-width 100%
     img
-      width 90%
+      max-width 120%
+      max-height 120%
   img
     max-width 100%
   .image-wrap
@@ -501,6 +502,47 @@ header.sticky
     align-items center
     justify-content center
 
+#main-sponsor
+  flex 1 900px
+  max-width 100%
+  padding 35px
+  background rgba(0,0,0,0.3)
+  display flex
+  flex-direction column
+  flex-wrap wrap
+  text-align center
+  align-items center
+  box-sizing border-box
+  min-height 350px
+  transition 0.2s ease-in all
+  margin-bottom 10px
+  &:hover
+    opacity .6
+  +below(700px)
+    max-width 100%
+    img
+      width 70%
+  +below(500px)
+    max-width 100%
+    min-height 150px
+    img
+      width 90%
+  img
+    max-width 100%
+  .image-wrap
+    margin-bottom 20px
+    
+    height 300px
+    display flex
+    align-items center
+    justify-content center
+    width 30%
+    +below(700px)
+      width 80%
+    +below(500px)
+      width 80%
+      height 130px
+  
 #announce
   max-width 100vw
 // .item2
@@ -542,9 +584,9 @@ header.sticky
     padding 10px
     border-radius 50%
   max-width calc(33% - 5px)
-  +below(1000px)
+  +below(800px)
     max-width calc(50% - 5px)
-  +below(770px)
+  +below(500px)
     max-width 100%
  
  .item-faq
@@ -563,17 +605,17 @@ header.sticky
      width 75px
      height 75px
    max-width calc(33% - 5px)
-   +below(1000px)
+   +below(800px)
      max-width calc(50% - 5px)
-   +below(770px)
+   +below(500px)
      max-width 100%
     
 
 .contentcontainer
   margin-top 50px
-  padding 0 50px
+  padding 0 20px
   +below(1000px)
-    padding 0 20px
+    padding 0 10px
 
 #rainmaking
   padding-left 30px
