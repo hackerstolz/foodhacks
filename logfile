@@ -1,0 +1,2 @@
+postgres: invalid argument: "/usr/local/pgsql/data"
+Try "postgres --help" for more information.
