@@ -541,6 +541,46 @@ header.sticky
     +below(500px)
       width 80%
       height 130px
+      
+.big-sponsors
+  flex 1 900px
+  max-width calc(50% - 5px)
+  padding 35px
+  background rgba(0,0,0,0.3)
+  display flex
+  flex-direction column
+  flex-wrap wrap
+  text-align center
+  align-items center
+  box-sizing border-box
+  min-height 450px
+  transition 0.2s ease-in all
+  margin-bottom 10px
+  &:hover
+    opacity .6
+  +below(700px)
+    max-width 100%
+    img
+      width 70%
+  +below(500px)
+    max-width 100%
+    min-height 150px
+    img
+      width 90%
+  img
+    width 160%
+  .image-wrap
+    margin-bottom 20px
+    height 400px
+    display flex
+    align-items center
+    justify-content center
+    width 30%
+    +below(700px)
+      width 60%
+    +below(500px)
+      width 60%
+      height 130px
   
 #announce
   max-width 100vw
@@ -732,3 +772,156 @@ header.sticky
   img
     width 100%
     max-width 1000px
+
+// Timeline
+@font-face
+  font-family 'ecoico'
+  src url('fonts/ecoico.eot')
+  src url('fonts/ecoico.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ecoico.woff') format('woff'),
+    url('fonts/ecoico.ttf') format('truetype'),
+    url('fonts/ecoico.svg#ecoico') format('svg')
+  font-weight normal
+  font-style normal
+
+.tmtimeline
+  margin 30px auto 0 auto
+  padding 0
+  list-style none
+  position relative
+  width 80%
+  &:before
+    content ''
+    position absolute
+    top 0
+    bottom 0
+    width 10px
+    background #fff
+    left 20%
+    margin-left -10px
+  & > li
+    position relative
+    .tmtime
+      position absolute
+      span
+        display block
+        text-align right
+        &:first-child
+          font-size 0.9em
+          color #bdd0db
+        &:last-child
+          font-size 2.9em
+    &:nth-child(odd)
+      .tmtime
+        span
+          &:last-child
+            color #FAFAFA
+      .tmlabel
+        background #0A0B16
+        &:after
+          border-right-color #0A0B16
+    .tmlabel
+      margin 0 0 15px 30%
+      background #0A0B16
+      color #fff
+      padding 2em
+      position relative
+      border-radius 5px
+      h6
+        margin-top 0px
+        font-size 19px
+        color rgba(255,255,255,0.85)
+        font-family: 'TWS Savory', Helvetica-Neue, sans-serif;
+        font-weight: 300;
+      &:after
+        right 100%
+        border solid transparent
+        content " "
+        height 0
+        width 0
+        position absolute
+        pointer-events none
+        border-right-color #0A0B16
+        border-width 10px
+        top 10px
+      p
+        line-height 140%
+
+    .tmicon
+      width 40px
+      height 40px
+      font-family 'ecoico'
+      speak none
+      font-style normal
+      font-weight normal
+      font-variant normal
+      text-transform none
+      font-size 1.4em
+      line-height 40px
+      -webkit-font-smoothing antialiased
+      position absolute
+      color #fff
+      background #0A0B16
+      border-radius 50%
+      box-shadow 0 0 0 8px #FAFAFA
+      text-align center
+      left 20%
+      top 0
+      margin 0 0 0 -25px
+
+.tmicon-phone
+  &:before
+    content "\e000"
+
+.tmicon-screen
+  &:before
+    content "\e001"
+
+.tmicon-mail
+  &:before
+    content "\e002"
+
+.tmicon-earth
+  &:before
+    content "\e003"
+
+@media screen and (max-width: 65.375em)
+  .tmtimeline
+    & > li
+      .tmtime
+        span
+          &:last-child
+            font-size 1.5em
+
+@media screen and (max-width: 47.2em)
+  .tmtimeline
+    &:before
+      display none
+    & > li
+      .tmtime
+        width 100%
+        position relative
+        padding 0 0 20px 0
+        span
+          text-align left
+      .tmlabel
+        margin 0 0 30px 0
+        padding 1em
+        font-weight 400
+        font-size 95%
+        &:after
+          right auto
+          left 20px
+          border-right-color transparent
+          border-bottom-color #0A0B16
+          top -20px
+      &:nth-child(odd)
+        .tmlabel
+          &:after
+            border-right-color transparent
+            border-bottom-color #0A0B16
+      .tmicon
+        position relative
+        float right
+        left auto
+        margin -55px 5px 0 0px
