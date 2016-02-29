@@ -486,14 +486,14 @@ header.sticky
   +below(700px)
     max-width calc(50% - 5px)
     img
-      width 70%
+      width 180px
   +below(500px)
     max-width 100%
     img
-      max-width 120%
-      max-height 120%
+      max-width 300px
+      max-height 300px
   img
-    max-width 100%
+    max-width 200px
   .image-wrap
     margin-bottom 20px
     width 85%
@@ -518,17 +518,19 @@ header.sticky
   margin-bottom 10px
   &:hover
     opacity .6
+  img
+    width 130%
   +below(700px)
     max-width 100%
     img
-      width 70%
+      width 300px
   +below(500px)
     max-width 100%
-    min-height 150px
+    min-height 250px
+    padding-top 150px
     img
-      width 90%
-  img
-    width 150%
+      width 250px
+      margin-top -100px
   .image-wrap
     margin-bottom 20px
     height 400px
@@ -774,67 +776,48 @@ header.sticky
     max-width 1000px
 
 // Timeline
-@font-face
-  font-family 'ecoico'
-  src url('fonts/ecoico.eot')
-  src url('fonts/ecoico.eot?#iefix') format('embedded-opentype'),
-    url('fonts/ecoico.woff') format('woff'),
-    url('fonts/ecoico.ttf') format('truetype'),
-    url('fonts/ecoico.svg#ecoico') format('svg')
-  font-weight normal
-  font-style normal
 
 .tmtimeline
-  margin 30px auto 0 auto
-  padding 0
+  margin 80px auto
+  padding 0 0 0 50px
   list-style none
   position relative
-  width 80%
+  width 100%
+    
   &:before
     content ''
     position absolute
     top 0
     bottom 0
-    width 10px
-    background #fff
-    left 20%
-    margin-left -10px
+    width 8px
+    background #0A0B16
+    left 88px
+    +below(500px)
+      left 40px
   & > li
     position relative
-    .tmtime
-      position absolute
-      span
-        display block
-        text-align right
-        &:first-child
-          font-size 0.9em
-          color #bdd0db
-        &:last-child
-          font-size 2.9em
     &:nth-child(odd)
-      .tmtime
-        span
-          &:last-child
-            color #FAFAFA
       .tmlabel
         background #0A0B16
         &:after
           border-right-color #0A0B16
     .tmlabel
-      margin 0 0 15px 30%
+      margin 0 0 15px 120px
       background #0A0B16
       color #fff
       padding 2em
       position relative
       border-radius 5px
+      +below(500px)
+        margin 0 0 15px 62px
       h6
         margin-top 0px
+        margin-bottom 0px
         font-size 19px
         color rgba(255,255,255,0.85)
         font-family: 'TWS Savory', Helvetica-Neue, sans-serif;
         font-weight: 300;
       &:after
-        right 100%
         border solid transparent
         content " "
         height 0
@@ -844,84 +827,199 @@ header.sticky
         border-right-color #0A0B16
         border-width 10px
         top 10px
+        transform translate(-52px,0)
       p
         line-height 140%
+    .tmday
+      background #0A0B16
+      width 180px
+      height 180px
+      border-radius 50%
+      display flex
+      align-items center
+      justify-content center
+      transform translate(-47px,-47px)
+      h3
+        font-size 30px
+        font-family 'Quicksand'
+      +below(500px)
+        transform translate(-52px,-47px)
+        border-radius 40px
+        height 80px
+        width 115%
+        margin-top 80px
+        box-sizing border-box
+        padding 15px
+        h3
+          font-size 45px
+      
 
     .tmicon
-      width 40px
-      height 40px
-      font-family 'ecoico'
-      speak none
-      font-style normal
-      font-weight normal
-      font-variant normal
-      text-transform none
-      font-size 1.4em
-      line-height 40px
+      width 85px
+      height 85px
       -webkit-font-smoothing antialiased
       position absolute
       color #fff
       background #0A0B16
       border-radius 50%
-      box-shadow 0 0 0 8px #FAFAFA
+      box-shadow 0 0 0 2px #0A0B16
       text-align center
-      left 20%
       top 0
-      margin 0 0 0 -25px
+      margin -20px 0 0 0
+      display flex
+      justify-content center
+      align-items center
+      transition 0.2s ease-in
+      +below(500px)
+        transform translate(-47px,0)
+      &:hover
+        opacity 0.7
+        cursor pointer
 
-.tmicon-phone
-  &:before
-    content "\e000"
+.tmicon-gettogether
+  background-image url("img/icon_whiskey.svg")
+  background-position center
+  background-size contain
+  background-repeat no-repeat
+  height 45px
+  width 45px
 
-.tmicon-screen
-  &:before
-    content "\e001"
+.tmicon-registration
+  background-image url("img/icon_croissant.svg")
+  background-position center
+  background-size contain
+  background-repeat no-repeat
+  height 45px
+  width 45px
+  
+.tmicon-kickoff
+  background-image url("img/icon_kickoff.svg")
+  background-position center
+  background-size contain
+  background-repeat no-repeat
+  height 45px
+  width 45px
+  
+.tmicon-keynote
+  background-image url("img/icon_keynote.svg")
+  background-position center
+  background-size contain
+  background-repeat no-repeat
+  height 45px
+  width 45px
+  
+.tmicon-workshop
+  background-image url("img/icon_workshop.svg")
+  background-position center
+  background-size contain
+  background-repeat no-repeat
+  height 45px
+  width 45px
 
-.tmicon-mail
-  &:before
-    content "\e002"
+.tmicon-startcoding
+  background-image url("img/icon_startcoding.svg")
+  background-position center
+  background-size contain
+  background-repeat no-repeat
+  height 45px
+  width 45px
 
-.tmicon-earth
-  &:before
-    content "\e003"
+.tmicon-lunchtime
+  background-image url("img/icon_lunchtime.svg")
+  background-position center
+  background-size contain
+  background-repeat no-repeat
+  height 45px
+  width 45px
 
-@media screen and (max-width: 65.375em)
-  .tmtimeline
-    & > li
-      .tmtime
-        span
-          &:last-child
-            font-size 1.5em
+.tmicon-dinner
+  background-image url("img/icon_dinner.svg")
+  background-position center
+  background-size contain
+  background-repeat no-repeat
+  height 45px
+  width 45px
 
-@media screen and (max-width: 47.2em)
-  .tmtimeline
-    &:before
-      display none
-    & > li
-      .tmtime
-        width 100%
-        position relative
-        padding 0 0 20px 0
-        span
-          text-align left
-      .tmlabel
-        margin 0 0 30px 0
-        padding 1em
-        font-weight 400
-        font-size 95%
-        &:after
-          right auto
-          left 20px
-          border-right-color transparent
-          border-bottom-color #0A0B16
-          top -20px
-      &:nth-child(odd)
-        .tmlabel
-          &:after
-            border-right-color transparent
-            border-bottom-color #0A0B16
-      .tmicon
-        position relative
-        float right
-        left auto
-        margin -55px 5px 0 0px
+.tmicon-nightcoding
+  background-image url("img/icon_nightcoding.svg")
+  background-position center
+  background-size contain
+  background-repeat no-repeat
+  height 45px
+  width 45px
+
+.tmicon-breakfast2
+  background-image url("img/icon_croissant.svg")
+  background-position center
+  background-size contain
+  background-repeat no-repeat
+  height 45px
+  width 45px
+.tmicon-codingfinale
+  background-image url("img/icon_codingfinale.svg")
+  background-position center
+  background-size contain
+  background-repeat no-repeat
+  height 45px
+  width 45px
+.tmicon-deadlinelunch
+  background-image url("img/icon_lunch2.svg")
+  background-position center
+  background-size contain
+  background-repeat no-repeat
+  height 45px
+  width 45px
+.tmicon-pitches
+  background-image url("img/icon_presentation.svg")
+  background-position center
+  background-size contain
+  background-repeat no-repeat
+  height 45px
+  width 45px
+.tmicon-ceremony
+  background-image url("img/icon_prizeceremony.svg")
+  background-position center
+  background-size contain
+  background-repeat no-repeat
+  height 45px
+  width 45px
+.tmicon-meetthewinners
+  background-image url("img/icon_meetthewinners.svg")
+  background-position center
+  background-size contain
+  background-repeat no-repeat
+  height 45px
+  width 45px
+.tmicon-pileddishes
+  background-image url("img/icon_pileddishes.svg")
+  background-position center
+  background-size contain
+  background-repeat no-repeat
+  height 45px
+  width 45px
+
+// @media screen and (max-width: 2000px)
+//   .tmtimeline
+//     &:before
+//       display none
+//     & > li
+//       .tmlabel
+//         margin 0 0 30px 60px
+//         padding 1em
+//         font-weight 400
+//         font-size 95%
+//         &:after
+//           display none
+//       .tmicon
+//         position relative
+//         float left
+//         left auto
+//         margin 0px 5px 0 0px
+        
+.day
+  display flex
+  width 100%
+  padding 40px 10px 0px 0%
+  font-size calc(2.5vw + 23px)
+  font-family 'Quicksand'
+  color rgba(255,255,255,.65)
