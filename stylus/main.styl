@@ -482,7 +482,9 @@ header.sticky
   transition 0.2s ease-in all
   margin-bottom 10px
   &:hover
-    opacity .6
+    opacity .8
+    img
+      animation scale 2s linear infinite
   +below(700px)
     max-width calc(50% - 5px)
     img
@@ -517,7 +519,9 @@ header.sticky
   transition 0.2s ease-in all
   margin-bottom 10px
   &:hover
-    opacity .6
+    opacity .8
+    img
+      animation scale 2s linear infinite
   img
     width 130%
   +below(700px)
@@ -559,7 +563,9 @@ header.sticky
   transition 0.2s ease-in all
   margin-bottom 10px
   &:hover
-    opacity .6
+    opacity .8
+    img
+      animation scale 2s linear infinite
   +below(700px)
     max-width 100%
     img
@@ -600,6 +606,9 @@ header.sticky
   box-sizing border-box
   +below(1000px)
     margin-bottom 10px
+  &:hover
+    img
+      animation rotation 2s linear infinite
 
 .item_image
   height 150px
@@ -641,6 +650,9 @@ header.sticky
    box-sizing border-box
    padding 20px
    margin-bottom 7px
+   &:hover
+    img
+      animation rotation 2s linear infinite
    img
      margin-bottom 30px
      width 75px
@@ -873,8 +885,8 @@ header.sticky
       +below(500px)
         transform translate(-47px,0)
       &:hover
-        opacity 0.7
         cursor pointer
+        animation: rotation 1s linear infinite;
 
 .tmicon-gettogether
   background-image url("img/icon_whiskey.svg")
@@ -997,6 +1009,32 @@ header.sticky
   background-repeat no-repeat
   height 45px
   width 45px
+  +below(600px)
+    display none
+    
+
+@keyframes rotation {
+  0% {
+  }
+  25% {
+    transform rotate(10deg)
+  }
+  75% {
+    transform rotate(-10deg)
+  }
+  100% {
+  }
+}
+
+@keyframes scale {
+  0% {
+  }
+  50% {
+    transform scale(.9)
+  }
+  100% {
+  }
+}
 
 // @media screen and (max-width: 2000px)
 //   .tmtimeline
