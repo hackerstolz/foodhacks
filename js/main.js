@@ -12,6 +12,7 @@ jQuery(document).ready(function($) {
     zoom: 13.4 // starting zoom
   });
 // TODO
+
 map.on('style.load', function () {
     // Add marker data as a new GeoJSON source.
     map.addSource("markers", {
