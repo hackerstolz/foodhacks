@@ -58,7 +58,7 @@ gulp.task( 'stylus', function() {
 } );
 
 gulp.task( 'js', function() {
-  return gulp.src('js/*')
+  return gulp.src('js/*.js')
         .pipe(gulp.dest('./app/js'))
         .pipe(livereload())
 } );
