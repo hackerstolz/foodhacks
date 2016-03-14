@@ -602,7 +602,7 @@ header.sticky
 //   background rgba(0,0,0,0.3)
   
 
-.item_overview, .item, .item-jury
+.item_overview, .item, .item-jury, .item-team
   margin-bottom 15px
   box-sizing border-box
   +below(1000px)
@@ -640,6 +640,27 @@ header.sticky
   +below(500px)
     max-width 100%
  
+ .item-team
+   flex 1 300px
+   display flex
+   flex-direction column
+   flex-wrap wrap
+   text-align center
+   align-items center
+   box-sizing border-box
+   padding 20px
+   img
+     margin-bottom 20px
+     width 125px
+     height 125px
+     border-radius 50%
+   max-width calc(33% - 5px)
+   +below(800px)
+     max-width calc(50% - 5px)
+   +below(500px)
+     max-width 100%
+
+
  .item-faq
    flex 1 300px
    display flex
