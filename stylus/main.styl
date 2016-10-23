@@ -2,13 +2,12 @@ body
   background #0e1021
   color white
   margin 0
-  
+
 html, body
   overflow-x hidden
 
-
 // Generelle Typographie
-  
+
 html
   font-family 'TWS Savory', Helvetica-Neue, sans-serif
   font-weight 200
@@ -19,6 +18,7 @@ body::-webkit-scrollbar
 
 body::-webkit-scrollbar-track
   background none
+
 body::-webkit-scrollbar-thumb
   width 35px
   background-image url("img/cheese.svg")
@@ -28,10 +28,10 @@ body::-webkit-scrollbar-thumb
 p, h3, h4, h5
   font-family 'TWS Savory', Helvetica-Neue, sans-serif
   font-weight 300
-  
+
 h3, h4
   line-height 150%
-  
+
 h1
   font-size 100px
 
@@ -47,9 +47,9 @@ h2
 ul, li
   padding 0
   margin 0
-  
+
 h3
-  color rgba(255,255,255,.85)
+  color rgba(255, 255, 255, .85)
   font-size 19px
   margin 5px 0
 
@@ -58,7 +58,7 @@ h1, h2
   font-weight 100
 
 p
-  color rgba(255,255,255,.5)
+  color rgba(255, 255, 255, .5)
   font 14px 'TWS Savory', Arial, sans-serif
   font-weight 300
   line-height 170%
@@ -78,15 +78,15 @@ a
     text-decoration None
   &:visited
     color white
-    
+
 // Landingpage
 
 .headlinespacing
   margin-bottom 50px
 
 hr
-  color rgba(255,255,255,.05)
-  background-color rgba(255,255,255,.05)
+  color rgba(255, 255, 255, .05)
+  background-color rgba(255, 255, 255, .05)
   width 100%
   margin 35px 20px
   padding 0
@@ -98,7 +98,7 @@ hr
 .wrapper
   max-width 1200px
   margin 0 auto
-  
+
 .landing
   +below(600px)
     background url("img/website_hero.svg")
@@ -112,7 +112,7 @@ hr
     width calc(100vw + 2px)
     margin-left -1px
     margin-top -1px
-  
+
 .mobile_wrapper
   width 100%
   +below(600px)
@@ -122,7 +122,7 @@ hr
   background url("img/nlayer-01.svg")
   background-repeat no-repeat
   background-size cover
-  
+
 #layer2
   background url("img/nlayer-02.svg")
   background-repeat no-repeat
@@ -132,7 +132,7 @@ hr
   background url("img/nlayer-03.svg")
   background-repeat no-repeat
   background-size cover
-  
+
 #layer4
   background url("img/nlayer-04.svg")
   background-repeat no-repeat
@@ -147,10 +147,10 @@ hr
   background url("img/nlayer-06.svg")
   background-repeat no-repeat
   background-size cover
-  
+
 #layer1, #layer2, #layer3, #layer4, #layer5, #layer6
   position absolute
-  
+
 #fixer
   z-index 1
   height 2px
@@ -158,7 +158,6 @@ hr
   border-bottom 1px solid #0E1021
   position absolute
   bottom -1px
-  
 
 @keyframes layer3 {
   0% {
@@ -173,7 +172,7 @@ hr
 }
 
 #layer3 {
-   animation: layer3 3.8s infinite;
+  animation: layer3 3.8s infinite;
 }
 
 @keyframes layer6 {
@@ -189,7 +188,7 @@ hr
 }
 
 #layer4 {
-   animation: layer4 4.2s infinite;
+  animation: layer4 4.2s infinite;
 }
 
 @keyframes layer4 {
@@ -205,7 +204,7 @@ hr
 }
 
 #layer5 {
-   animation: layer5 3.5s infinite;
+  animation: layer5 3.5s infinite;
 }
 
 @keyframes layer5 {
@@ -219,12 +218,10 @@ hr
     opacity 1
   }
 }
+
 #layer6 {
-   animation: layer6 11s infinite;
+  animation: layer6 11s infinite;
 }
-
-
-
 
 header
   position fixed
@@ -233,12 +230,12 @@ header
   width 100%
   padding-top 10px
   font-size 24px
-  background rgba(0,0,0,0.65)
+  background rgba(0, 0, 0, 0.65)
   transition all 0.7s ease
   -webkit-transition all 0.7s ease
   +below(620px)
     display None
-    
+
 #menue_container
   width 100%
   display flex
@@ -264,18 +261,16 @@ header
     justify-content flex-end
     margin auto 20px auto auto
     padding 8px
-    background rgba(224,62,59,1)
+    background rgba(224, 62, 59, 1)
     transition 0.2s all
     border-radius 18px
     &:hover, &:focus
       cursor pointer
-      background rgba(224,62,59,.5)
-
-
+      background rgba(224, 62, 59, .5)
 
 .mobile_header
   position fixed
-  background rgba(0,0,0,0.35)
+  background rgba(0, 0, 0, 0.35)
   bottom 0
   left 0
   right 0
@@ -299,9 +294,9 @@ header
       text-transform uppercase
       font-size 9px
       color white
-  transform translate(0,100px)
+  transform translate(0, 100px)
   +below(620px)
-    transform translate(0,0)
+    transform translate(0, 0)
 
 #mobile_register_button
   flex 5 500px
@@ -310,7 +305,6 @@ header
   justify-content center
   padding 20px 10px
   background #FA5743
-  
 
 header.sticky
   top 0px
@@ -325,35 +319,34 @@ header.sticky
   animation: arrow 2.5s linear infinite;
   +below(600px)
     display none
-  
+
   margin-top -20vh
   img
     height 30px
-    
+
 @keyframes arrow {
   0% {
-    transform translate(0,-10px)
+    transform translate(0, -10px)
     opacity 0.2
   }
   50% {
-    transform translate(0,0px)
+    transform translate(0, 0px)
     opacity 1
   }
   100% {
-    transform translate(0,-10px)
+    transform translate(0, -10px)
     opacity 0.2
   }
 }
-    
+
 #about
   text-align center
   margin 10vh 0
   h2
-    color rgba(255,255,255,.5)
+    color rgba(255, 255, 255, .5)
     font-size 45px
     margin-top -35px
     line-height 130%
-
 
 .prices_container
   width 100%
@@ -396,7 +389,7 @@ header.sticky
         font-size 25px
         @media screen and (max-width: 1100px)
           font-size 20px
-        padding-left 0
+          padding-left 0
         label
           display table-cell
           padding-right 20px
@@ -421,11 +414,11 @@ header.sticky
 .rightbg
   @media screen and (max-width: 1100px)
     display none
-  background-image url('img/br_bananas.svg')
-  background-repeat: no-repeat
-  background-size: contain
-  height 80%
-  width 50%
+    background-image url('img/br_bananas.svg')
+    background-repeat: no-repeat
+    background-size: contain
+    height 80%
+    width 50%
 
 .container
   display flex
@@ -436,7 +429,6 @@ header.sticky
 
 #landingcontainer
   margin 0 auto
-
 
 .headline_box
   padding 0px 30px 30px 0
@@ -449,7 +441,7 @@ header.sticky
 .item
   flex 1 300px
   padding 35px
-  background rgba(0,0,0,0.3)
+  background rgba(0, 0, 0, 0.3)
   display flex
   flex-direction column
   flex-wrap wrap
@@ -471,7 +463,7 @@ header.sticky
   flex 1 300px
   max-width calc(33% - 5px)
   padding 35px
-  background rgba(0,0,0,0.3)
+  background rgba(0, 0, 0, 0.3)
   display flex
   flex-direction column
   flex-wrap wrap
@@ -509,7 +501,7 @@ header.sticky
   flex 1 900px
   max-width 100%
   padding 35px
-  background rgba(0,0,0,0.3)
+  background rgba(0, 0, 0, 0.3)
   display flex
   flex-direction column
   flex-wrap wrap
@@ -548,12 +540,12 @@ header.sticky
     +below(500px)
       width 80%
       height 130px
-      
+
 .big-sponsors
   flex 1 900px
   max-width calc(50% - 5px)
   padding 35px
-  background rgba(0,0,0,0.3)
+  background rgba(0, 0, 0, 0.3)
   display flex
   flex-direction column
   flex-wrap wrap
@@ -590,9 +582,10 @@ header.sticky
     +below(500px)
       width 60%
       height 130px
-  
+
 #announce
   max-width 100vw
+
 // .item2
 //   flex 1 360px
 //   flex-grow 1
@@ -600,7 +593,6 @@ header.sticky
 //   padding 25px
 //   max-width calc(80% - 5px)
 //   background rgba(0,0,0,0.3)
-  
 
 .item_overview, .item, .item-jury, .item-team
   margin-bottom 15px
@@ -616,11 +608,11 @@ header.sticky
   display flex
   justify-content center
   align-items center
-  
+
 .item-jury
   flex 1 300px
   display flex
-  background rgba(0,0,0,0.3)
+  background rgba(0, 0, 0, 0.3)
   flex-direction column
   flex-wrap wrap
   text-align center
@@ -639,52 +631,50 @@ header.sticky
     max-width calc(50% - 5px)
   +below(500px)
     max-width 100%
- 
- .item-team
-   flex 1 300px
-   display flex
-   flex-direction column
-   flex-wrap wrap
-   text-align center
-   align-items center
-   box-sizing border-box
-   padding 20px
-   img
-     margin-bottom 20px
-     width 125px
-     height 125px
-     border-radius 50%
-   max-width calc(33% - 5px)
-   +below(800px)
-     max-width calc(50% - 5px)
-   +below(500px)
-     max-width 100%
 
+.item-team
+  flex 1 300px
+  display flex
+  flex-direction column
+  flex-wrap wrap
+  text-align center
+  align-items center
+  box-sizing border-box
+  padding 20px
+  img
+    margin-bottom 20px
+    width 125px
+    height 125px
+    border-radius 50%
+  max-width calc(33% - 5px)
+  +below(800px)
+    max-width calc(50% - 5px)
+  +below(500px)
+    max-width 100%
 
- .item-faq
-   flex 1 300px
-   display flex
-   flex-direction column
-   flex-wrap wrap
-   background rgba(0,0,0,0.3)
-   text-align center
-   align-items center
-   box-sizing border-box
-   padding 20px
-   margin-bottom 7px
-   &:hover
+.item-faq
+  flex 1 300px
+  display flex
+  flex-direction column
+  flex-wrap wrap
+  background rgba(0, 0, 0, 0.3)
+  text-align center
+  align-items center
+  box-sizing border-box
+  padding 20px
+  margin-bottom 7px
+  &:hover
     img
       animation rotation 2s linear infinite
-   img
-     margin-bottom 30px
-     width 75px
-     height 75px
-   max-width calc(33% - 5px)
-   +below(800px)
-     max-width calc(50% - 5px)
-   +below(500px)
-     max-width 100%
-    
+  img
+    margin-bottom 30px
+    width 75px
+    height 75px
+  max-width calc(33% - 5px)
+  +below(800px)
+    max-width calc(50% - 5px)
+  +below(500px)
+    max-width 100%
 
 .contentcontainer
   margin-top 50px
@@ -699,8 +689,8 @@ header.sticky
   h2
     display inline-block
     padding 5px 25px
-    background rgba(0,0,0,.65)
-    
+    background rgba(0, 0, 0, .65)
+
 #loft_pic
   background-image url("img/loft_pic.jpg")
   background-repeat no-repeat
@@ -717,7 +707,7 @@ header.sticky
 
 #loft_description
   position absolute
-  transform translate(0,-80px)
+  transform translate(0, -80px)
   right calc(50% - 520px)
   +below(1200px)
     right 50px
@@ -732,18 +722,18 @@ header.sticky
     width 350px
     padding 25px
     box-sizing border-box
-    background rgba(0,0,0,.65)
+    background rgba(0, 0, 0, .65)
 
 #mapbox
-   z-index -1
-   height 425px
-   width 100%
-   font-size 12px
-   +below(500px)
-     width calc(100% + 40px)
-     margin-left -20px
-     margin-top -380px
-  
+  z-index -1
+  height 425px
+  width 100%
+  font-size 12px
+  +below(500px)
+    width calc(100% + 40px)
+    margin-left -20px
+    margin-top -380px
+
 .banner
   transition 0.2s all
   margin-bottom 20px
@@ -800,6 +790,7 @@ header.sticky
 .typeform_box
   width 100%
   margin auto
+
 .infochart
   @media screen and (max-width: 1100px)
     display none
@@ -817,7 +808,7 @@ header.sticky
   list-style none
   position relative
   width 100%
-    
+
   &:before
     content ''
     position absolute
@@ -848,7 +839,7 @@ header.sticky
         margin-top 0px
         margin-bottom 0px
         font-size 19px
-        color rgba(255,255,255,0.85)
+        color rgba(255, 255, 255, 0.85)
         font-family: 'TWS Savory', Helvetica-Neue, sans-serif;
         font-weight: 300;
       &:after
@@ -861,7 +852,7 @@ header.sticky
         border-right-color #0A0B16
         border-width 10px
         top 10px
-        transform translate(-52px,0)
+        transform translate(-52px, 0)
       p
         line-height 140%
     .tmday
@@ -872,12 +863,12 @@ header.sticky
       display flex
       align-items center
       justify-content center
-      transform translate(-47px,-47px)
+      transform translate(-47px, -47px)
       h3
         font-size 30px
         font-family 'Quicksand'
       +below(500px)
-        transform translate(-52px,-47px)
+        transform translate(-52px, -47px)
         border-radius 40px
         height 80px
         width 115%
@@ -886,7 +877,6 @@ header.sticky
         padding 15px
         h3
           font-size 45px
-      
 
     .tmicon
       width 85px
@@ -905,7 +895,7 @@ header.sticky
       align-items center
       transition 0.2s ease-in
       +below(500px)
-        transform translate(-47px,0)
+        transform translate(-47px, 0)
       &:hover
         cursor pointer
         animation: rotation 1s linear infinite;
@@ -925,7 +915,7 @@ header.sticky
   background-repeat no-repeat
   height 45px
   width 45px
-  
+
 .tmicon-kickoff
   background-image url("img/icon_kickoff.svg")
   background-position center
@@ -933,7 +923,7 @@ header.sticky
   background-repeat no-repeat
   height 45px
   width 45px
-  
+
 .tmicon-keynote
   background-image url("img/icon_keynote.svg")
   background-position center
@@ -941,7 +931,7 @@ header.sticky
   background-repeat no-repeat
   height 45px
   width 45px
-  
+
 .tmicon-workshop
   background-image url("img/icon_workshop.svg")
   background-position center
@@ -989,6 +979,7 @@ header.sticky
   background-repeat no-repeat
   height 45px
   width 45px
+
 .tmicon-codingfinale
   background-image url("img/icon_codingfinale.svg")
   background-position center
@@ -996,6 +987,7 @@ header.sticky
   background-repeat no-repeat
   height 45px
   width 45px
+
 .tmicon-deadlinelunch
   background-image url("img/icon_lunch2.svg")
   background-position center
@@ -1003,6 +995,7 @@ header.sticky
   background-repeat no-repeat
   height 45px
   width 45px
+
 .tmicon-pitches
   background-image url("img/icon_presentation.svg")
   background-position center
@@ -1010,6 +1003,7 @@ header.sticky
   background-repeat no-repeat
   height 45px
   width 45px
+
 .tmicon-ceremony
   background-image url("img/icon_prizeceremony.svg")
   background-position center
@@ -1017,6 +1011,7 @@ header.sticky
   background-repeat no-repeat
   height 45px
   width 45px
+
 .tmicon-meetthewinners
   background-image url("img/icon_meetthewinners.svg")
   background-position center
@@ -1024,6 +1019,7 @@ header.sticky
   background-repeat no-repeat
   height 45px
   width 45px
+
 .tmicon-pileddishes
   background-image url("img/icon_pileddishes.svg")
   background-position center
@@ -1033,7 +1029,6 @@ header.sticky
   width 45px
   +below(600px)
     display none
-    
 
 @keyframes rotation {
   0% {
@@ -1075,11 +1070,29 @@ header.sticky
 //         float left
 //         left auto
 //         margin 0px 5px 0 0px
-        
+
 .day
   display flex
   width 100%
   padding 40px 10px 0px 0%
   font-size calc(2.5vw + 23px)
   font-family 'Quicksand'
-  color rgba(255,255,255,.65)
+  color rgba(255, 255, 255, .65)
+
+.aftermovie
+  margin auto
+  text-align center
+
+.contentcontainer-mobility
+  text-align center
+  .mobility-container
+    margin auto
+    text-align center
+    margin-top 12px
+    a
+      margin auto
+      width 100%
+    img
+      opacity 0.8
+      border 2px solid #ffffff
+      width 100%
