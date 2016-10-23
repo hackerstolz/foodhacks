@@ -6,6 +6,7 @@ body
 html, body
   overflow-x hidden
 
+
 // Generelle Typographie
 
 html
@@ -18,7 +19,6 @@ body::-webkit-scrollbar
 
 body::-webkit-scrollbar-track
   background none
-
 body::-webkit-scrollbar-thumb
   width 35px
   background-image url("img/cheese.svg")
@@ -49,7 +49,7 @@ ul, li
   margin 0
 
 h3
-  color rgba(255, 255, 255, .85)
+  color rgba(255,255,255,.85)
   font-size 19px
   margin 5px 0
 
@@ -58,7 +58,7 @@ h1, h2
   font-weight 100
 
 p
-  color rgba(255, 255, 255, .5)
+  color rgba(255,255,255,.5)
   font 14px 'TWS Savory', Arial, sans-serif
   font-weight 300
   line-height 170%
@@ -85,8 +85,8 @@ a
   margin-bottom 50px
 
 hr
-  color rgba(255, 255, 255, .05)
-  background-color rgba(255, 255, 255, .05)
+  color rgba(255,255,255,.05)
+  background-color rgba(255,255,255,.05)
   width 100%
   margin 35px 20px
   padding 0
@@ -159,6 +159,7 @@ hr
   position absolute
   bottom -1px
 
+
 @keyframes layer3 {
   0% {
     opacity 1
@@ -218,10 +219,12 @@ hr
     opacity 1
   }
 }
-
 #layer6 {
   animation: layer6 11s infinite;
 }
+
+
+
 
 header
   position fixed
@@ -230,7 +233,7 @@ header
   width 100%
   padding-top 10px
   font-size 24px
-  background rgba(0, 0, 0, 0.65)
+  background rgba(0,0,0,0.65)
   transition all 0.7s ease
   -webkit-transition all 0.7s ease
   +below(620px)
@@ -261,16 +264,18 @@ header
     justify-content flex-end
     margin auto 20px auto auto
     padding 8px
-    background rgba(224, 62, 59, 1)
+    background rgba(224,62,59,1)
     transition 0.2s all
     border-radius 18px
     &:hover, &:focus
       cursor pointer
-      background rgba(224, 62, 59, .5)
+      background rgba(224,62,59,.5)
+
+
 
 .mobile_header
   position fixed
-  background rgba(0, 0, 0, 0.35)
+  background rgba(0,0,0,0.35)
   bottom 0
   left 0
   right 0
@@ -294,9 +299,9 @@ header
       text-transform uppercase
       font-size 9px
       color white
-  transform translate(0, 100px)
+  transform translate(0,100px)
   +below(620px)
-    transform translate(0, 0)
+    transform translate(0,0)
 
 #mobile_register_button
   flex 5 500px
@@ -305,6 +310,7 @@ header
   justify-content center
   padding 20px 10px
   background #FA5743
+
 
 header.sticky
   top 0px
@@ -326,15 +332,15 @@ header.sticky
 
 @keyframes arrow {
   0% {
-    transform translate(0, -10px)
+    transform translate(0,-10px)
     opacity 0.2
   }
   50% {
-    transform translate(0, 0px)
+    transform translate(0,0px)
     opacity 1
   }
   100% {
-    transform translate(0, -10px)
+    transform translate(0,-10px)
     opacity 0.2
   }
 }
@@ -343,10 +349,11 @@ header.sticky
   text-align center
   margin 10vh 0
   h2
-    color rgba(255, 255, 255, .5)
+    color rgba(255,255,255,.5)
     font-size 45px
     margin-top -35px
     line-height 130%
+
 
 .prices_container
   width 100%
@@ -430,6 +437,7 @@ header.sticky
 #landingcontainer
   margin 0 auto
 
+
 .headline_box
   padding 0px 30px 30px 0
   box-sizing border-box
@@ -441,7 +449,7 @@ header.sticky
 .item
   flex 1 300px
   padding 35px
-  background rgba(0, 0, 0, 0.3)
+  background rgba(0,0,0,0.3)
   display flex
   flex-direction column
   flex-wrap wrap
@@ -463,7 +471,7 @@ header.sticky
   flex 1 300px
   max-width calc(33% - 5px)
   padding 35px
-  background rgba(0, 0, 0, 0.3)
+  background rgba(0,0,0,0.3)
   display flex
   flex-direction column
   flex-wrap wrap
@@ -501,7 +509,7 @@ header.sticky
   flex 1 900px
   max-width 100%
   padding 35px
-  background rgba(0, 0, 0, 0.3)
+  background rgba(0,0,0,0.3)
   display flex
   flex-direction column
   flex-wrap wrap
@@ -545,7 +553,7 @@ header.sticky
   flex 1 900px
   max-width calc(50% - 5px)
   padding 35px
-  background rgba(0, 0, 0, 0.3)
+  background rgba(0,0,0,0.3)
   display flex
   flex-direction column
   flex-wrap wrap
@@ -585,7 +593,6 @@ header.sticky
 
 #announce
   max-width 100vw
-
 // .item2
 //   flex 1 360px
 //   flex-grow 1
@@ -593,6 +600,7 @@ header.sticky
 //   padding 25px
 //   max-width calc(80% - 5px)
 //   background rgba(0,0,0,0.3)
+
 
 .item_overview, .item, .item-jury, .item-team
   margin-bottom 15px
@@ -612,7 +620,7 @@ header.sticky
 .item-jury
   flex 1 300px
   display flex
-  background rgba(0, 0, 0, 0.3)
+  background rgba(0,0,0,0.3)
   flex-direction column
   flex-wrap wrap
   text-align center
@@ -652,12 +660,13 @@ header.sticky
   +below(500px)
     max-width 100%
 
+
 .item-faq
   flex 1 300px
   display flex
   flex-direction column
   flex-wrap wrap
-  background rgba(0, 0, 0, 0.3)
+  background rgba(0,0,0,0.3)
   text-align center
   align-items center
   box-sizing border-box
@@ -676,6 +685,7 @@ header.sticky
   +below(500px)
     max-width 100%
 
+
 .contentcontainer
   margin-top 50px
   padding 0 20px
@@ -689,7 +699,7 @@ header.sticky
   h2
     display inline-block
     padding 5px 25px
-    background rgba(0, 0, 0, .65)
+    background rgba(0,0,0,.65)
 
 #loft_pic
   background-image url("img/loft_pic.jpg")
@@ -707,7 +717,7 @@ header.sticky
 
 #loft_description
   position absolute
-  transform translate(0, -80px)
+  transform translate(0,-80px)
   right calc(50% - 520px)
   +below(1200px)
     right 50px
@@ -722,7 +732,7 @@ header.sticky
     width 350px
     padding 25px
     box-sizing border-box
-    background rgba(0, 0, 0, .65)
+    background rgba(0,0,0,.65)
 
 #mapbox
   z-index -1
@@ -790,7 +800,6 @@ header.sticky
 .typeform_box
   width 100%
   margin auto
-
 .infochart
   @media screen and (max-width: 1100px)
     display none
@@ -839,7 +848,7 @@ header.sticky
         margin-top 0px
         margin-bottom 0px
         font-size 19px
-        color rgba(255, 255, 255, 0.85)
+        color rgba(255,255,255,0.85)
         font-family: 'TWS Savory', Helvetica-Neue, sans-serif;
         font-weight: 300;
       &:after
@@ -852,7 +861,7 @@ header.sticky
         border-right-color #0A0B16
         border-width 10px
         top 10px
-        transform translate(-52px, 0)
+        transform translate(-52px,0)
       p
         line-height 140%
     .tmday
@@ -863,12 +872,12 @@ header.sticky
       display flex
       align-items center
       justify-content center
-      transform translate(-47px, -47px)
+      transform translate(-47px,-47px)
       h3
         font-size 30px
         font-family 'Quicksand'
       +below(500px)
-        transform translate(-52px, -47px)
+        transform translate(-52px,-47px)
         border-radius 40px
         height 80px
         width 115%
@@ -877,6 +886,7 @@ header.sticky
         padding 15px
         h3
           font-size 45px
+
 
     .tmicon
       width 85px
@@ -895,7 +905,7 @@ header.sticky
       align-items center
       transition 0.2s ease-in
       +below(500px)
-        transform translate(-47px, 0)
+        transform translate(-47px,0)
       &:hover
         cursor pointer
         animation: rotation 1s linear infinite;
@@ -979,7 +989,6 @@ header.sticky
   background-repeat no-repeat
   height 45px
   width 45px
-
 .tmicon-codingfinale
   background-image url("img/icon_codingfinale.svg")
   background-position center
@@ -987,7 +996,6 @@ header.sticky
   background-repeat no-repeat
   height 45px
   width 45px
-
 .tmicon-deadlinelunch
   background-image url("img/icon_lunch2.svg")
   background-position center
@@ -995,7 +1003,6 @@ header.sticky
   background-repeat no-repeat
   height 45px
   width 45px
-
 .tmicon-pitches
   background-image url("img/icon_presentation.svg")
   background-position center
@@ -1003,7 +1010,6 @@ header.sticky
   background-repeat no-repeat
   height 45px
   width 45px
-
 .tmicon-ceremony
   background-image url("img/icon_prizeceremony.svg")
   background-position center
@@ -1011,7 +1017,6 @@ header.sticky
   background-repeat no-repeat
   height 45px
   width 45px
-
 .tmicon-meetthewinners
   background-image url("img/icon_meetthewinners.svg")
   background-position center
@@ -1019,7 +1024,6 @@ header.sticky
   background-repeat no-repeat
   height 45px
   width 45px
-
 .tmicon-pileddishes
   background-image url("img/icon_pileddishes.svg")
   background-position center
@@ -1029,6 +1033,7 @@ header.sticky
   width 45px
   +below(600px)
     display none
+
 
 @keyframes rotation {
   0% {
@@ -1077,7 +1082,7 @@ header.sticky
   padding 40px 10px 0px 0%
   font-size calc(2.5vw + 23px)
   font-family 'Quicksand'
-  color rgba(255, 255, 255, .65)
+  color rgba(255,255,255,.65)
 
 .aftermovie
   margin auto
